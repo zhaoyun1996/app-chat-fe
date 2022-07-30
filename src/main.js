@@ -7,7 +7,7 @@ Vue.config.productionTip = false;
 Vue.use(
     new VueSocketIO({
         debug: true,
-        connection: process.env.VITE_API_URL || "http://localhost:3000",
+        connection: process.env.VITE_API_URL,
     })
 );
 
