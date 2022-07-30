@@ -7,7 +7,7 @@ Vue.config.productionTip = false;
 Vue.use(
     new VueSocketIO({
         debug: true,
-        connection: `${import.meta.env.VITE_API_URL}`,
+        connection: process.env.VITE_API_URL,
     })
 );
 
